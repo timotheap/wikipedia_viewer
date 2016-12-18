@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Wikipedia Viewer</title>
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="EditURI" type="application/rsd+xml" href="//www.mediawiki.org/w/api.php?action=rsd" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">timotheap</a>
+                </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="menu">
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="http://tim01.surge.sh" target="_blank">tribute</a></li>
+                        <li><a href="http://tim02.surge.sh" target="_blank">portfolio</a></li>
+                        <li><a href="http://tim03.surge.sh" target="_blank">weather app</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://github.com/timotheap/wiki_viewer" target="_blank">view code</a></li>
+                    
+                  </ul>
+             </div>
+          </div>
+        </nav>
+        <div class="container">
+           
+                <form class="form-inline middle">
+                  <div class="form-group has-feedback has-error">
+                    
+                    <label class="sr-only" for="search">search</label>
+                    <input type="search" class="form-control clearable" placeholder="search" id="userinput">
+                      <a href="#"><span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true" id="remove"></span></a>
+                  </div>             
+                   <button type="submit" class="btn btn-default">Search</button>
+                  <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-default">Random</a>             
+                </form>
+            
+            <div id="input">
+                
+            </div>
+            
+        </div>
+            
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+   <script src="js/app.js"></script>
+    </body>
+</html>
